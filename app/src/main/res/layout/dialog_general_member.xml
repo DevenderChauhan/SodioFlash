@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/white_coners_bg"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="280dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/cancel"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="15dp"
+                    android:src="@drawable/shut_down_icon"
+                    android:scaleType="center"/>
+
+                <TextView
+                    android:id="@+id/text2"
+                    style="@style/deep_gray_14_w_w"
+                    android:layout_below="@+id/text1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/dialog_general_member_context1"
+                    />
+
+                <TextView
+                    android:id="@+id/text3"
+                    style="@style/deep_gray_14_w_w"
+                    android:layout_below="@+id/text2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/dialog_general_member_context2"
+                    />
+                <TextView
+                    android:id="@+id/text1"
+                    style="@style/black_15_w_w"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="35dp"
+                    android:text="@string/dialog_general_member_title"
+                    android:layout_below="@+id/cancel"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/refound"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="20dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/genaral_btn_click_bg_with_gradient"
+                android:text="@string/dialog_general_member_pay"
+                android:textAllCaps="false"
+                android:textColor="@color/color_white"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:scaleType="center"
+            android:src="@drawable/pay_img" />
+    </RelativeLayout>
+</LinearLayout>

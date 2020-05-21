@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="250dp"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:orientation="vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/icon_my"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="37.5dp"
+        android:src="@drawable/portrait"
+        app:civ_border_color="@color/color_deep_gray"
+        app:civ_border_width="1px" />
+
+    <TextView
+        android:id="@+id/nickName"
+        style="@style/black_17_w_w"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="NickName" />
+
+    <LinearLayout
+        android:id="@+id/vip_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="4.5dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/vip_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/vip_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="center"
+            android:src="@drawable/vip_note_bg" />
+
+        <TextView
+            android:id="@+id/vip_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:text="@string/person_vip"
+            android:textColor="@drawable/vip_text_bg"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_color"
+        android:paddingBottom="10dp"
+        >
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:background="@color/color_white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:id="@+id/order"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="21.5dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:scaleType="center"
+                        android:src="@drawable/my_order_icon" />
+
+                    <TextView
+
+                        style="@style/black_15_w_w"
+                        android:layout_marginLeft="20dp"
+                        android:text="@string/menu_ll1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/wallet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24.5dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:scaleType="center"
+                        android:src="@drawable/my_wallet_icon" />
+
+                    <TextView
+                        style="@style/black_15_w_w"
+                        android:layout_marginLeft="20dp"
+                        android:text="@string/menu_ll2" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_vip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24.5dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:scaleType="center"
+                        android:src="@drawable/my_vip_icon" />
+
+                    <TextView
+                        style="@style/black_15_w_w"
+                        android:layout_marginLeft="20dp"
+                        android:text="@string/menu_ll3" />
+
+                    <TextView
+                        android:id="@+id/txt_vip_desc"
+                        style="@style/black_15_w_w"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/menu_ll3_desc" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/my_offer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24.5dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:scaleType="center"
+                        android:src="@drawable/my_preferential_icon" />
+
+                    <TextView
+                        style="@style/black_15_w_w"
+                        android:layout_marginLeft="20dp"
+                        android:text="@string/menu_ll4" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_rechange"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24.5dp"
+                    android:visibility="gone"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:scaleType="center"
+                        android:src="@drawable/my_exchange_icon" />
+
+                    <TextView
+                        style="@style/black_15_w_w"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:text="@string/menu_ll5" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_shop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24.5dp"
+                    android:visibility="gone"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:scaleType="center"
+                        android:src="@drawable/my_best_deals_icon" />
+
+                    <TextView
+                        style="@style/black_15_w_w"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:text="@string/menu_ll9" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_lucky"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24.5dp"
+                    android:visibility="gone"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:scaleType="center"
+                        android:src="@drawable/my_lucky_wheei_icon" />
+
+                    <TextView
+                        style="@style/black_15_w_w"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:text="@string/menu_ll10" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_prom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24.5dp"
+                    android:visibility="gone"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:scaleType="center"
+                        android:src="@drawable/my_promo_code_icon" />
+
+                    <TextView
+                        style="@style/black_15_w_w"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:text="@string/menu_ll11" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24.5dp"
+                    android:layout_marginBottom="12dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:scaleType="center"
+                        android:src="@drawable/my_contact_icon" />
+
+                    <TextView
+                        style="@style/black_15_w_w"
+                        android:layout_marginLeft="20dp"
+                        android:text="@string/menu_ll6" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/ll_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/mySet"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="center"
+                    android:src="@drawable/my_setup_icon" />
+
+                <TextView
+                    style="@style/deep_gray_15_w_w"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/menu_ll7" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_help"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="center"
+                    android:src="@drawable/my_guide_icon" />
+
+                <TextView
+                    style="@style/deep_gray_15_w_w"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/menu_ll8" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

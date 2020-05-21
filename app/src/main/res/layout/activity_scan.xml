@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:id="@+id/fl_zxing_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <include
+        android:id="@+id/head_ll"
+        layout="@layout/head_layout"/>
+    <ImageView
+        android:layout_below="@+id/head_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:src="@drawable/qc_logo_picture"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <TextView style="@style/white_12_w_w"
+            android:text="@string/scan_tip"/>
+        <ImageView
+            android:id="@+id/flash_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="center"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/flashlight_white_bg"/>
+        <TextView
+            android:id="@+id/flash_text"
+            style="@style/white_12_w_w"
+            android:layout_marginTop="5dp"
+            android:text="@string/scan_open_flash"/>
+        <View
+            style="@style/line"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg">
+    <include
+        android:id="@+id/head_layout"
+        layout="@layout/head_layout" />
+    <ScrollView
+        android:layout_below="@+id/head_layout"
+        android:layout_above="@+id/ll_payBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/details_picture"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/orderCode"
+                        style="@style/white_17_w_w"
+                        android:layout_marginLeft="23dp"
+                        android:layout_marginTop="27.5dp" />
+
+                    <TextView
+                        android:id="@+id/orderTotalPrice"
+                        style="@style/white_13_w_w"
+                        android:layout_marginLeft="23dp"
+                        android:layout_marginTop="89dp"
+                        android:text="@string/ride_over_tital_price" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="23dp"
+                        android:layout_marginTop="3.5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/white_13_w_w"
+                            android:text="@string/ride_over_use_time" />
+
+                        <TextView
+                            android:id="@+id/useTime"
+                            style="@style/white_13_w_w" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View style="@style/line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/color_white"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/btn_my_offer"
+                        android:layout_width="match_parent"
+                        android:layout_height="44dp">
+
+                        <TextView
+                            style="@style/black_17_w_w"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="15dp"
+                            android:text="@string/ride_over_offer" />
+
+                        <ImageView
+                            android:id="@+id/right_offer1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="15dp"
+                            android:scaleType="center"
+                            android:src="@drawable/right_arrow" />
+
+                        <TextView
+                            android:id="@+id/myOffer"
+                            style="@style/augay_16_w_w"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="15dp"
+                            android:layout_toLeftOf="@+id/right_offer1"
+                            android:text="@string/ride_over_offer_no" />
+                    </RelativeLayout>
+
+                    <View
+                        style="@style/line"
+                        android:layout_marginLeft="15dp" />
+
+                    <RelativeLayout
+                        android:id="@+id/rr_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="44dp">
+
+                        <TextView
+                            style="@style/black_17_w_w"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="15dp"
+                            android:text="@string/ride_over_order_detail" />
+
+                        <ImageView
+                            android:id="@+id/right_offer2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="15dp"
+                            android:scaleType="center"
+                            android:src="@drawable/right_arrow" />
+
+                        <TextView
+                            style="@style/augay_16_w_w"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="15dp"
+                            android:layout_toLeftOf="@+id/right_offer2"
+                            android:text="@string/ride_over_view" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <View style="@style/line" />
+
+                <LinearLayout
+                    android:id="@+id/ll_payForcard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/color_white"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+
+                    <View style="@style/line" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="44dp"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/icon_wechat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="15dp"
+                            android:scaleType="center"
+                            android:src="@drawable/wechat_pay_icon_n" />
+
+                        <TextView
+                            style="@style/black_17_w_w"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="15dp"
+                            android:layout_toRightOf="@+id/icon_wechat"
+                            android:text="@string/ride_over_wxchat" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="15dp"
+                            android:scaleType="center"
+                            android:src="@drawable/fill" />
+                    </RelativeLayout>
+
+                    <View
+                        style="@style/line"
+                        android:layout_marginLeft="15dp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="44dp">
+
+                        <ImageView
+                            android:id="@+id/icon_stripe"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="15dp"
+                            android:scaleType="center"
+                            android:src="@drawable/stripe_pay_icon_n" />
+
+                        <TextView
+                            style="@style/black_17_w_w"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="15dp"
+                            android:layout_toRightOf="@+id/icon_stripe"
+                            android:text="@string/ride_over_stripe" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="15dp"
+                            android:scaleType="center"
+                            android:src="@drawable/fill" />
+                    </RelativeLayout>
+
+                    <View style="@style/line" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_wallet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/color_white"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+
+                    <View style="@style/line" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="44dp">
+
+                        <TextView
+                            android:id="@+id/wallet_tip"
+                            style="@style/black_17_w_w"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="15dp"
+                            android:text="@string/ride_over_wallet" />
+
+                        <TextView
+                            android:id="@+id/wallet_text"
+                            style="@style/augay_16_w_w"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_toRightOf="@+id/wallet_tip"
+                            android:gravity="right"
+                            android:text="@string/ride_over_wallet_no" />
+                    </RelativeLayout>
+
+                    <View style="@style/line" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/rulesDesc"
+                    style="@style/black_13_w_w"
+                    android:layout_margin="15dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/rr_question"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp">
+
+                        <TextView
+                            style="@style/augay_12_w_w"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="15dp"
+                            android:drawablePadding="3dp"
+                            android:drawableRight="@drawable/help_icon"
+                            android:text="@string/ride_over_question" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/deep_gray_14_w_w"
+                            android:layout_gravity="center_horizontal"
+                            android:text="@string/ride_over_tips" />
+
+                        <TextView
+                            style="@style/deep_gray_14_w_w"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/ride_over_tip_txt1" />
+
+                        <TextView
+                            style="@style/deep_gray_14_w_w"
+                            android:layout_marginLeft="15dp"
+                            android:text="@string/ride_over_tip_txt2" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_payBtn"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="#3a3a3a"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/toPayPrice"
+                style="@style/white_17_w_w"
+                android:layout_marginLeft="15dp"
+                android:text="@string/ride_over_to_pay" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="8.5dp"
+                android:layout_marginRight="8.5dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/color_white" />
+
+            <TextView
+                android:id="@+id/offerPrice"
+                style="@style/white_17_w_w"
+                android:text="@string/ride_over_offering" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_pay"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/genaral_btn_click_bg_with_gradient_no_coners"
+            android:gravity="center">
+
+            <TextView
+                style="@style/white_17_w_w"
+                android:text="@string/ride_over_pay_btn" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

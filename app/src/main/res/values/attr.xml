@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--渐变progress，可随手指拖动-->
+    <attr name="myHeight" format="dimension"/>
+    <attr name="myWidth" format="dimension"/>
+    <declare-styleable name="OpenLockLoadingViewAttr">
+        <attr name="myHeight"/>
+        <attr name="myWidth"/>
+    </declare-styleable>
+</resources>

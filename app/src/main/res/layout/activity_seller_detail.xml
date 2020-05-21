@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/head_layout" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="211dp"
+        android:background="@drawable/default_banner">
+
+        <com.car.qijia.thinker.photo.widget.PreviewViewPager
+            android:id="@+id/viewPage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></com.car.qijia.thinker.photo.widget.PreviewViewPager>
+
+        <LinearLayout
+            android:id="@+id/ll_viewCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"></LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/sellerName"
+            style="@style/black_18_w_w"
+            android:layout_margin="15dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/type1Num"
+                    style="@style/augay_10_w_w"
+                    android:background="@drawable/corns_bg_black"
+                    android:padding="3dp"
+                    android:text="@string/seller_msg_borrow"
+                    android:textColor="@drawable/general_text_gay_bg" />
+
+                <TextView
+                    style="@style/theme_12_w_w"
+                    android:text="@string/seller_msg_type1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/type2Num"
+                    style="@style/augay_10_w_w"
+                    android:background="@drawable/corns_bg_black"
+                    android:padding="3dp"
+                    android:text="@string/seller_msg_borrow"
+                    android:textColor="@drawable/general_text_gay_bg" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/seller_msg_type2"
+                    android:textColor="#4A90E2"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/type3Num"
+                    style="@style/augay_10_w_w"
+                    android:background="@drawable/corns_bg_black"
+                    android:padding="3dp"
+                    android:text="@string/seller_msg_borrow"
+                    android:textColor="@drawable/general_text_gay_bg" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/seller_msg_type3"
+                    android:textColor="#02AB00"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            style="@style/line"
+            android:layout_marginTop="11dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/black_14_w_w"
+                android:layout_height="match_parent"
+                android:text="@string/seller_detail_return" />
+
+            <TextView
+                android:id="@+id/returnNum"
+                style="@style/tip_red_14_w_w"
+                android:text="0" />
+
+            <TextView
+                style="@style/black_14_w_w"
+                android:layout_height="match_parent"
+                android:text="@string/seller_detail_util" />
+        </LinearLayout>
+
+        <View
+            style="@style/line"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:gravity="center_vertical">
+
+                <TextView
+                    style="@style/black_14_w_w"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/seller_detail_adress" />
+
+                <TextView
+                    android:id="@+id/sellerAddress"
+                    style="@style/deep_gray_14_w_w" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:background="@color/color_line" />
+
+            <LinearLayout
+                android:id="@+id/ll_navi"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="center"
+                    android:src="@drawable/address_gps_icon" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View style="@style/line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/black_14_w_w"
+                android:text="@string/seller_detail_time" />
+
+            <TextView
+                android:id="@+id/sellerTime"
+                style="@style/deep_gray_14_w_w" />
+        </LinearLayout>
+
+        <View style="@style/line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/black_14_w_w"
+                android:text="@string/seller_detail_phone" />
+
+            <TextView
+                android:id="@+id/sellerPhone"
+                style="@style/tip_red_14_w_w" />
+        </LinearLayout>
+
+        <View style="@style/line" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/scan_Code"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/genaral_btn_click_bg_with_gradient_no_coners"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/text_scan"
+                style="@style/white_15_w_w"
+                android:text="@string/seller_detail_borrow"
+                android:textColor="@drawable/general_text_selector"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

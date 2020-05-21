@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/item_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="5dp"
+        android:background="@drawable/stroke_the_bg">
+        <TextView
+            android:id="@+id/needPay"
+            style="@style/augay_15_w_w"
+            android:textColor="@drawable/theme_text_black_bg"/>
+        <TextView
+            android:id="@+id/offerMoney"
+            style="@style/tip_red_13_w_w"
+            android:textColor="@color/color_tip_red"/>
+    </LinearLayout>
+</LinearLayout>

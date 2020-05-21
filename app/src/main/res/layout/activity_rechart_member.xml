@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/color_white">
+
+        <ImageView
+            android:id="@+id/head_left"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:scaleType="center"
+            android:src="@drawable/back_bg" />
+
+        <TextView
+            android:id="@+id/head_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="标题"
+            android:textColor="@color/color_black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/head_right"
+            style="@style/black_16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:text="@string/member_list_title" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@drawable/vip_img">
+
+        <TextView
+            android:id="@+id/vipcard"
+            style="@style/white_20_w_w"
+            android:layout_margin="15dp"
+            android:text="@string/member_vip_title" />
+
+        <TextView
+            android:id="@+id/remainTime"
+            style="@style/white_14_w_w"
+            android:layout_below="@+id/vipcard"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:id="@+id/meturityData"
+            style="@style/white_12_w_w"
+            android:layout_below="@+id/remainTime"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="56dp" />
+
+        <TextView
+            android:id="@+id/freeTime"
+            style="@style/white_12_w_w"
+            android:layout_below="@+id/meturityData"
+            android:layout_marginLeft="15dp"
+            android:text="@string/member_vip_free" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/freeTime"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="center"
+            android:src="@drawable/colorful_bike_img" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="@color/color_white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:background="@color/color_white"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/dataList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@color/translate"
+                android:dividerHeight="0dip"
+                android:scrollbars="none"
+                android:listSelector="@color/translate"></ListView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/color_white"
+                android:orientation="vertical">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none">
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_desc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/updata"
+            style="@style/white_15"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/genaral_btn_click_bg_with_gradient_no_coners"
+            android:gravity="center"
+            android:text="" />
+    </RelativeLayout>
+
+</LinearLayout>

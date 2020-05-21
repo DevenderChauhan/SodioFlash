@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+    <include layout = "@layout/head_layout"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center_vertical">
+            <ImageView
+                android:id="@+id/wx_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/binding_wechat_n"
+                android:scaleType="center"/>
+            <TextView style="@style/black_16_w_w"
+                android:text="@string/acount_wx"
+                android:layout_toRightOf="@+id/wx_icon"
+                android:layout_marginLeft="15dp"
+                />
+            <LinearLayout
+                android:id="@+id/ll_wechat"
+                android:layout_width="62dp"
+                android:layout_height="26dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:gravity="center"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/wx_bind"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@drawable/item_question_text_selector"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+        <View style="@style/line"
+            android:layout_marginLeft="58dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center_vertical">
+            <ImageView
+                android:id="@+id/facebook_icon"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginLeft="15dp"
+                android:scaleType="center"
+                android:src="@drawable/binding_facebook_n"
+                />
+            <TextView style="@style/black_16_w_w"
+                android:text="@string/acount_facebook"
+                android:layout_toRightOf="@+id/facebook_icon"
+                android:layout_marginLeft="15dp"/>
+            <LinearLayout
+                android:id="@+id/ll_facebook"
+                android:layout_width="62dp"
+                android:layout_height="26dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:gravity="center"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/facebook_bind"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@drawable/item_question_text_selector"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

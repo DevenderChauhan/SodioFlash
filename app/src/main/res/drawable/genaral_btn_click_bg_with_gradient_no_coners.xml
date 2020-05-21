@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape>
+            <gradient android:startColor="@color/color_click_ed_s"
+                android:endColor="@color/color_click_ed_e"
+                />
+        </shape>
+    </item>
+    <item android:state_enabled="false">
+        <shape>
+            <gradient android:startColor="@color/color_click_none_s"
+                android:endColor="@color/color_click_none_e"
+                />
+        </shape>
+    </item>
+    <item android:state_enabled="true">
+        <shape>
+            <gradient android:startColor="@color/color_click_nor_s"
+                android:endColor="@color/color_click_nor_e"
+                />
+        </shape>
+    </item>
+
+    <item>
+        <shape>
+            <gradient android:startColor="@color/color_click_nor_s"
+                android:endColor="@color/color_click_nor_e"
+                />
+        </shape>
+    </item>
+</selector>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../Lib-MVP/Lib-MVP.iml" filepath="$PROJECT_DIR$/../Lib-MVP/Lib-MVP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Lib-Tools/Lib-Tools.iml" filepath="$PROJECT_DIR$/../Lib-Tools/Lib-Tools.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Thinker-Android-Library.iml" filepath="$PROJECT_DIR$/../Thinker-Android-Library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../app/app.iml" filepath="$PROJECT_DIR$/../app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../lib-pay/lib-pay.iml" filepath="$PROJECT_DIR$/../lib-pay/lib-pay.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib-zxing.iml" filepath="$PROJECT_DIR$/lib-zxing.iml" />
+    </modules>
+  </component>
+</project>

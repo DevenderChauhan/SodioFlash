@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <View style="@style/line" android:layout_marginLeft="15dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:background="@color/color_white">
+        <TextView
+            android:id="@+id/type"
+            style="@style/black_17_w_w"
+            android:layout_marginLeft="15dp"/>
+        <TextView
+            android:id="@+id/time"
+            style="@style/deep_gray_13_w_w"
+            android:layout_below="@+id/type"
+            android:layout_alignLeft="@+id/type"
+            android:layout_marginTop="1.5dp"/>
+        <TextView
+            android:id="@+id/money"
+            style="@style/tip_red_14_w_w"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/head_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="@string/to_rechart_money"
+            android:textColor="@color/color_deep_gray"
+            android:background="@null"
+            android:textSize="13sp" />
+
+        <View
+            style="@style/line"
+            android:layout_marginLeft="12dp" />
+
+        <GridView
+            android:id="@+id/myGridview"
+            android:layout_margin="15dp"
+            android:verticalSpacing="15dp"
+            android:horizontalSpacing="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:listSelector="@color/translate"
+            android:numColumns="2"
+            />
+    </LinearLayout>
+    <View style="@style/line"/>
+    <View style="@style/line"
+        android:visibility="gone"
+        android:layout_marginTop="10dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/wx_pay"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:visibility="gone"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp">
+            <TextView style="@style/black_17_w_w"
+                android:text="@string/charge_wx"
+                android:gravity="center_vertical"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/wechat_pay_icon_n"
+                android:drawablePadding="15dp"/>
+            <ImageView
+                android:id="@+id/img_selected"
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/fill"/>
+        </RelativeLayout>
+        <View style="@style/line"
+            android:visibility="gone"
+            android:layout_marginLeft="12dp"/>
+        <RelativeLayout
+            android:id="@+id/stripe_pay"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginRight="15dp"
+            android:visibility="gone"
+            android:layout_marginLeft="15dp">
+            <TextView style="@style/black_17_w_w"
+                android:text="@string/charge_stripe"
+                android:gravity="center_vertical"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/stripe_pay_icon_n"
+                android:drawablePadding="15dp"/>
+            <ImageView
+                android:id="@+id/img_stripe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/fill"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <View
+        android:visibility="gone"
+        style="@style/line"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+            <LinearLayout
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView style="@style/deep_gray_13_w_w"
+                    android:text="@string/to_rechart_tips"/>
+                <TextView
+                    android:id="@+id/rechartRules"
+                    style="@style/tip_red_13_w_w"
+                    android:text="@string/to_rechart_rules"
+                    android:layout_marginLeft="3dp"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/toRechart"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/color_white"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:background="@drawable/genaral_btn_click_bg_with_gradient_no_coners"
+                android:text="@string/to_rechart"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

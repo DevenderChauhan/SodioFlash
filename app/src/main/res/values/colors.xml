@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="translate">#00000000</color>
+    <color name="vip_color">#FFBB4A</color>
+    <color name="color_white">#ffffff</color>
+    <color name="color_white_si">#28ffffff</color>
+    <!--主题色-->
+    <color name="color_theme">#ED242C</color>
+    <!--主题色40-->
+    <color name="color_theme_si">#28ED242C</color>
+    <!--黑色-->
+    <color name="color_black">#000000</color>
+    <!--黑色40-->
+    <color name="color_black_si">#28000000</color>
+    <!--分割线色-->
+    <color name="color_line">#E5E5E5</color>
+    <!--分割线色-->
+    <color name="color_aux_gray">#B2B2B2</color>
+    <!--背景色-->
+    <color name="color_bg">#F5F5F5</color>
+    <!--深灰色-->
+    <color name="color_deep_gray">#888888</color>
+    <!--深灰色40-->
+    <color name="color_deep_gray_si">#28888888</color>
+    <!--提示红-->
+    <color name="color_tip_red">#FF4100</color>
+    <!--可点击渐变1色-->
+    <color name="color_click_nor_s">#FF444B</color>
+    <!--可点击渐变2色-->
+    <color name="color_click_nor_e">#ED242C</color>
+    <!--点击后渐变1色-->
+    <color name="color_click_ed_s">#DF0009</color>
+    <!--点击后渐变2色-->
+    <color name="color_click_ed_e">#BD0E15</color>
+    <!--不可点击渐变1色-->
+    <color name="color_click_none_s">#7FFF444B</color>
+    <!--不可点击渐变2色-->
+    <color name="color_click_none_e">#7FED242C</color>
+</resources>

@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/head_layout" />
+
+    <View style="@style/line" />
+
+    <View
+        style="@style/line"
+        android:layout_marginTop="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/person_icon"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp">
+
+            <TextView
+                style="@style/black_17_w_w"
+                android:layout_centerVertical="true"
+                android:text="@string/person_avatar" />
+
+            <ImageView
+                android:id="@+id/person_img_right1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:scaleType="center"
+                android:src="@drawable/right_arrow" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/icon_my"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:layout_toLeftOf="@+id/person_img_right1"
+                android:src="@drawable/portrait"
+                app:civ_border_color="@color/color_deep_gray"
+                app:civ_border_width="1px" />
+        </RelativeLayout>
+
+        <View
+            style="@style/line"
+            android:layout_marginLeft="15dp" />
+
+        <RelativeLayout
+            android:id="@+id/person_nickName"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp">
+
+            <TextView
+                style="@style/black_17_w_w"
+                android:layout_centerVertical="true"
+                android:text="@string/person_username" />
+
+            <ImageView
+                android:id="@+id/person_img_right2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:scaleType="center"
+                android:src="@drawable/right_arrow" />
+
+            <TextView
+                android:id="@+id/nickName"
+                style="@style/deep_gray_17_w_w"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:layout_toLeftOf="@+id/person_img_right2" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+
+            <View
+                style="@style/line"
+                android:layout_marginLeft="15dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp">
+
+                <TextView
+                    style="@style/black_17_w_w"
+                    android:layout_centerVertical="true"
+                    android:text="@string/person_phone" />
+
+                <ImageView
+                    android:id="@+id/person_img_right3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@color/color_deep_gray"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/phone"
+                    style="@style/deep_gray_17_w_w"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/person_img_right3" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View style="@style/line" />
+    </LinearLayout>
+
+    <View
+        style="@style/line"
+        android:layout_marginTop="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_modify_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+
+            <RelativeLayout
+                android:id="@+id/modify_paw"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp">
+
+                <TextView
+                    style="@style/black_17_w_w"
+                    android:layout_centerVertical="true"
+                    android:text="@string/person_modify_paw" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="center"
+                    android:src="@drawable/right_arrow" />
+
+            </RelativeLayout>
+
+            <View
+                style="@style/line"
+                android:layout_marginLeft="15dp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/bankCard"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp">
+
+            <TextView
+                style="@style/black_17_w_w"
+                android:layout_centerVertical="true"
+                android:text="@string/person_bank_card" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:scaleType="center"
+                android:src="@drawable/right_arrow" />
+
+        </RelativeLayout>
+
+        <View style="@style/line" />
+    </LinearLayout>
+
+    <View
+        style="@style/line"
+        android:layout_marginTop="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/acountBind"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp">
+
+            <TextView
+                style="@style/black_17_w_w"
+                android:layout_centerVertical="true"
+                android:text="@string/person_acount" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:scaleType="center"
+                android:src="@drawable/right_arrow" />
+
+        </RelativeLayout>
+
+        <View style="@style/line" />
+
+        <LinearLayout
+            android:id="@+id/ll_bind_code"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="43dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="5">
+
+                    <TextView
+                        style="@style/black_17_w_w"
+                        android:layout_centerVertical="true"
+                        android:text="@string/person_bindcode" />
+
+
+                    <TextView
+                        android:id="@+id/isbindSyscode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/person_bindcode_nowinput"
+                        android:textColor="@color/color_tip_red"
+                        android:textSize="17sp"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/img_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="15sp"
+                    android:scaleType="center"
+                    android:src="@drawable/right_arrow" />
+            </LinearLayout>
+
+            <View style="@style/line" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

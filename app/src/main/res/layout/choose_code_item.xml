@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <View
+        android:id="@+id/topView"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:background="@color/color_white">
+        <TextView
+            android:id="@+id/countryName"
+            style="@style/black_17_w_w"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"/>
+        <TextView
+            android:id="@+id/countryCode"
+            style="@style/deep_gray_17_w_w"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"/>
+        <View
+            android:id="@+id/diverd"
+            style="@style/line"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="15dp"/>
+    </RelativeLayout>
+    <View
+        android:id="@+id/bottomView"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+</LinearLayout>
